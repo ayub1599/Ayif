@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from "react";
 
 const G = {
   dark:"#062510", mid:"#0e4a1f", main:"#1a6b2b", light:"#7cc04f",
-  gold:"#f0c040", goldDark:"#c8920a", cream:"#fafaf6", cardBg:"#ffffff",
+  gold:"#f0c040", goldDark:"#c8920a", cream:"#ff0000", cardBg:"#ffffff",
   text:"#1a1a1a", muted:"#6b7280", border:"#e5e0d8", red:"#dc2626",
   blue:"#1e40af", amber:"#d97706"
 };
