@@ -518,7 +518,7 @@ export default function App() {
       <p style={{color:G.light,fontSize:11,letterSpacing:5,marginTop:6,textTransform:"uppercase",fontWeight:700}}>Fresh & Local Groceries</p>
       <p style={{color:"rgba(255,255,255,.38)",fontSize:12,marginTop:8}}>B2B Wholesale Distribution · India 🇮🇳</p>
       <div style={{display:"flex",flexDirection:"column",gap:12,marginTop:48,width:"100%",maxWidth:340,zIndex:1}}>
-        <button className="tap" onClick={()=>setPage("vlogin")} style={{padding:"18px",background:`linear-gradient(135deg,${G.gold},${G.goldDark})`,color:G.dark,border:"none",borderRadius:18,fontWeight:800,fontSize:16,cursor:"pointer",boxShadow:"0 8px 28px rgba(240,192,64,.45)"}}>🛒 Vendor / Customer Login</button>
+        <button className="tap" onClick={()=>setPage("vlogin")} style={{padding:"18px",background:`linear-gradient(135deg,${G.gold},${G.goldDark})`,color:G.dark,border:"none",borderRadius:18,fontWeight:800,fontSize:16,cursor:"pointer",boxShadow:"0 8px 28px rgba(240,192,64,.45)"}}>🛒 Customer Login</button>
         <button className="tap" onClick={()=>{if(firstRun){setPage("setup");}else{setLoginStep("creds");setLoginErr("");setPage("alogin");}}} style={{padding:"16px",background:"rgba(255,255,255,.08)",color:"#fff",border:"1.5px solid rgba(255,255,255,.2)",borderRadius:18,fontWeight:600,fontSize:15,cursor:"pointer"}}>🔐 Admin Login</button>
       </div>
       <p style={{color:"rgba(255,255,255,.15)",fontSize:11,marginTop:36,zIndex:1,letterSpacing:1.5}}>AYIF · {adminCfg.city||"India"} 🇮🇳</p>
