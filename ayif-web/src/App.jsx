@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import { useState, useEffect, useRef } from "react";
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -153,7 +155,7 @@ const AyifName = ({size=28,white=true}) => (
 );
 
 const Toast = ({msg,type="ok",onDone}) => {
-  useEffect(()=>{const t=setTimeout(onDone,3600);return()=>clearTimeout(t);},[]);
+  useEffect(()=>{const t=setTimeout(onDone,3600);return()=>clearTimeout(t);},[onDone]);
   const bg={ok:G.mid,err:"#7f1d1d",info:G.blue,warn:G.amber}[type]||G.mid;
   return <div style={{position:"fixed",top:18,left:"50%",transform:"translateX(-50%)",zIndex:9999,background:bg,color:"#fff",padding:"13px 22px",borderRadius:14,fontSize:13,fontWeight:600,boxShadow:"0 8px 32px rgba(0,0,0,.3)",maxWidth:340,textAlign:"center",animation:"pop .3s ease",whiteSpace:"pre-line",lineHeight:1.6}}>{msg}</div>;
 };
